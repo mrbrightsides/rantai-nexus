@@ -33,9 +33,9 @@ OHARA_APPS = {
         "url": "https://ohara.ai/mini-apps/27ff0d99-01d2-4cff-ac22-adab36dbb5f8?utm_source=rantai-nexus",
         "title": "🎭 Social Media"
     },
-    "Gas & Performance": {
-        "url": "https://ohara.ai/mini-apps/e33686f2-bdec-4043-b683-0fd4507979b2?utm_source=learn3",
-        "title": "⚡ Gas & Performance"
+    "Halal Chain": {
+        "url": "https://ohara.ai/mini-apps/f3731395-8e3c-45e2-b222-c838ea3834d9?utm_source=rantai-nexus",
+        "title": "☪ Halal Chain"
     },
     "Audit Security": {
         "url": "https://ohara.ai/mini-apps/0c47e8dd-0310-4bf6-8e02-c97612856385?utm_source=learn3",
@@ -238,7 +238,7 @@ tabs = st.tabs([
     "🪪 DID Prototype",
     "🚗 Ferix Lab",
     "🎭 Social Media",
-    "⚡ Gas & Performance",
+    "☪ Halal Chain",
     "🔐 Audit Security",
     "🔗 Web3 Lab",
     "🎓 Certification"
@@ -304,9 +304,9 @@ with tabs[5]:
     app = OHARA_APPS["Social Media"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 6: Gas & Performance (iframe ke Ohara) ===
+# === Tab 6: Halal Chain (iframe ke Ohara) ===
 with tabs[6]:
-    app = OHARA_APPS["Gas & Performance"]
+    app = OHARA_APPS["Halal Chain"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 7: Audit Security (iframe ke Ohara) ===
