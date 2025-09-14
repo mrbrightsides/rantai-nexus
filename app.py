@@ -232,7 +232,7 @@ st.markdown("""
 
 # ===== Tab utama =====
 tabs = st.tabs([
-    "🤖 Chat", 
+    "🤖 Chat AI", 
     "🎸 Learn to Earn",
     "👾 Retro Games",
     "🪪 DID Prototype",
@@ -319,7 +319,6 @@ with tabs[7]:
 with tabs[8]:
     app = OHARA_APPS["Cultural DAO"]
     embed_lab(app["url"], app["title"], hide_px=100)
-    embed_iframe_cropped(url, visible_height=720, hide_top=56, hide_bottom=100)
 
 # === Tab 9: Certification (iframe ke Ohara) ===
 with tabs[9]:
