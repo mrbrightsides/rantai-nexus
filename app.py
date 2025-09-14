@@ -102,7 +102,7 @@ def embed_lab(url: str, title: str = "", hide_px: int = 72):
       </script>
     """, height=1080)
     
-def embed_cropped(url: str, hide_px: int = 56, height: int = 720, hide_bottom=50, title: str | None = None):
+def embed_cropped(url: str, hide_px: int = 56, height: int = 720, hide_bottom=100, title: str | None = None):
     """Embed iframe dengan 'crop' area atas setinggi hide_px (untuk menyamarkan header)."""
     if title:
         st.markdown(f"### {title}")
