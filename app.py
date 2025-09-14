@@ -41,9 +41,9 @@ OHARA_APPS = {
         "url": "https://ohara.ai/mini-apps/6f842cbf-3265-4a3a-921f-d16e70794123?utm_source=rantai-nexus",
         "title": "✈ Travel Tycoon"
     },
-    "Web3 Lab": {
-        "url": "https://ohara.ai/mini-apps/6a9f756b-573c-442c-9544-792660d7a86a?utm_source=learn3",
-        "title": "🔗 Web3 Lab"
+    "Cultural DAO": {
+        "url": "https://ohara.ai/mini-apps/6302c6c4-4b49-4c30-9131-bb8d553fa7c5?utm_source=rantai-nexus",
+        "title": "🇮🇩 Cultural DAO"
     },
     "Certification": {
         "url": "https://ohara.ai/mini-apps/e86a5136-f96f-4d52-af61-8de234ed7686?utm_source=learn3",
@@ -240,13 +240,13 @@ tabs = st.tabs([
     "🎭 Social Media",
     "☪ Halal Chain",
     "✈ Travel Tycoon",
-    "🔗 Web3 Lab",
+    "🇮🇩 Cultural DAO",
     "🎓 Certification"
 ])
 
 # ===== Tab: Chatbot =====
 with tabs[0]:
-    st.subheader("🤖 Chat")
+    st.subheader("🤖 Chat AI")
     st.markdown("""
         Tanya AI dan Admin tentang website ini.
     """)
@@ -257,14 +257,15 @@ with tabs[0]:
     
     widget_opt = st.radio(
         " ",
-        ["Chat"],
+        ["Chat", "Gateway"],
         horizontal=True, label_visibility="collapsed",
-        index=["Chat"].index(st.session_state.chat_widget),
+        index=["Chat","Gateway"].index(st.session_state.chat_widget),
         key="chat_widget"
     )
     
     URLS = {
-        "Chat": "https://tawk.to/chat/68c62f434321191926759616/1j532h7vl"
+        "Chat": "https://tawk.to/chat/68c62f434321191926759616/1j532h7vl",
+        "Gateway":"https://rantai-nexus.vercel.app/"
     }
     chosen_url = URLS[widget_opt]
     
@@ -314,10 +315,11 @@ with tabs[7]:
     app = OHARA_APPS["Travel Tycoon"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 8: Web3 Lab (iframe ke Ohara) ===
+# === Tab 8: Cultural DAO (iframe ke Ohara) ===
 with tabs[8]:
-    app = OHARA_APPS["Web3 Lab"]
+    app = OHARA_APPS["Cultural DAO"]
     embed_lab(app["url"], app["title"], hide_px=100)
+    embed_iframe_cropped(url, visible_height=720, hide_top=56, hide_bottom=100)
 
 # === Tab 9: Certification (iframe ke Ohara) ===
 with tabs[9]:
