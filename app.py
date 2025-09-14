@@ -12,9 +12,9 @@ import streamlit.components.v1 as components
 
 # ==== Ohara Miniapps ====
 OHARA_APPS = {
-    "Blockchain 101": {
-        "url": "https://ohara.ai/mini-apps/c3f9e7ad-c9a7-4b44-8d9e-742fd117f5e6?utm_source=learn3",
-        "title": "📖 Blockchain 101"
+    "Learn to Earn": {
+        "url": "https://ohara.ai/mini-apps/13b468ca-644e-4736-b06f-2141861901ec?utm_source=rantai-nexus",
+        "title": "🎸 Learn to Earn"
     },
     "Token Lab": {
         "url": "https://ohara.ai/mini-apps/miniapp_cmffpcnl10o678nlkgegfgpmn?utm_source=learn3",
@@ -134,16 +134,9 @@ with st.sidebar:
     )
     st.sidebar.markdown("📘 **About**")
     st.sidebar.markdown("""
-    Learn3 adalah platform edukasi Web3 interaktif yang dikemas seperti game petualangan. Memadukan AI bot dan mentor, gamifikasi, serta real-world tools dari ekosistem blockchain.
-    Kami percaya belajar Web3 bukan sekadar membaca teori, tapi perjalanan interaktif:
-
-    - mulai dari dasar,
-    
-    - naik level lewat simulasi,
-    
-    - eksplorasi frontier research,
-    
-    - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian.
+    RANTAI Nexus adalah rumah pusat untuk semua eksperimen RANTAI: 
+    edukasi, sandbox, demo, game, simulasi, dan lain-lain.
+    Pilih modul dari navbar
 
     Showcase dan dokumentasi ada disini [Doc](https://learn3showcase.vercel.app)
     
@@ -195,11 +188,11 @@ st.set_page_config(
 col1, col2 = st.columns([2, 2])
 with col1:
     st.markdown("""
-        # Learn Web3 with Learn3 🌐
+        # Welcome to RANTAI Nexus 🌌
     """)
 with col2:
     st.markdown("""
-        ## Chat. Code. Chained. Certified — Your Web3 Journey Starts Here
+        ## KOLABORAKSI — rumah semua eksperimen & modul Web3
     """)
 st.markdown("""
         > 💡 Untuk tampilan dan pengalaman belajar yang optimal, disarankan menggunakan browser pada laptop atau PC untuk mengakses Learn3
@@ -208,7 +201,7 @@ st.markdown("""
 # ===== Tab utama =====
 tabs = st.tabs([
     "🤖 AI Playground", 
-    "📖 Blockchain 101",
+    "🎸 Learn to Earn",
     "🧪 Token Lab",
     "🗳 DAO Sandbox",
     "💱 DeFi Workshop",
@@ -269,9 +262,9 @@ with tabs[0]:
     if st.button(f"🔗 Klik disini jika ingin menampilkan halaman chat {widget_opt} dengan lebih baik"):
         st.markdown(f"""<meta http-equiv="refresh" content="0; url={chosen_url}">""", unsafe_allow_html=True)
 
-# === Tab 1: Blockchain 101 (iframe ke Ohara) ===
+# === Tab 1: Learn to Earn (iframe ke Ohara) ===
 with tabs[1]:
-    app = OHARA_APPS["Blockchain 101"]
+    app = OHARA_APPS["Learn to Earn"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 2: Token Lab (iframe ke Ohara) ===
