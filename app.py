@@ -170,8 +170,8 @@ with st.sidebar:
     )
     st.sidebar.markdown("📘 **About**")
     st.sidebar.markdown("""
-    RANTAI Nexus adalah rumah pusat untuk semua eksperimen RANTAI: 
-    edukasi, sandbox, demo, game, simulasi, dan lain-lain.
+    RANTAI Nexus adalah ruang bermain sekaligus ruang belajar, di mana fun bertemu focus, iman bertemu inovasi, wisata bertemu Web3, dan akademik bertemu eksperimen; semua terhubung lewat rantai ide-kode serta kolaborasi-aksi.
+   
     Pilih modul dari navbar:
     1. Chat AI: Belajar dunia Web3 yang fun dan santai menggunakan AI
     2. Learn to Earn: Belajar musik menggunakan AI dan Klaim Hadiah menggunakan Web3
@@ -231,7 +231,7 @@ st.set_page_config(
 col1, col2 = st.columns([2, 2])
 with col1:
     st.markdown("""
-        # Fun meets Focus, cuma di Nexus 🌌
+        # Fun meets Focus on Nexus 🌌
     """)
 with col2:
     st.markdown("""
