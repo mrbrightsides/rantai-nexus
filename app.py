@@ -16,13 +16,13 @@ OHARA_APPS = {
         "url": "https://ohara.ai/mini-apps/13b468ca-644e-4736-b06f-2141861901ec?utm_source=rantai-nexus",
         "title": "🎸 Learn to Earn"
     },
-    "Token Lab": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmffpcnl10o678nlkgegfgpmn?utm_source=learn3",
-        "title": "🧪 Token Lab"
+    "Retro Games": {
+        "url": "https://ohara.ai/mini-apps/b3f29b78-f623-4d9e-b0be-e81c7a8d5dd0?utm_source=rantai-nexus",
+        "title": "👾 Retro Games"
     },
-    "DAO Sandbox": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmffptu29011cb3lkcmx6h3co?utm_source=learn3",
-        "title": "🗳 DAO Sandbox"
+    "DID Prototype": {
+        "url": "https://ohara.ai/mini-apps/miniapp_cmfix4aur0g98nulkbdou3zlg?utm_source=rantai-nexus",
+        "title": "🪪 DID Prototype"
     },
     "DeFi Workshop": {
         "url": "https://ohara.ai/mini-apps/miniapp_cmffqhjpu0173b3lkbvhh7arq?utm_source=learn3",
@@ -129,7 +129,7 @@ div[data-testid="stMetric"]{
 
 with st.sidebar:
     st.sidebar.image(
-        "https://i.imgur.com/E5LaGaa.png",
+        "https://i.imgur.com/n1m1LJf.png",
         use_container_width=True
     )
     st.sidebar.markdown("📘 **About**")
@@ -180,8 +180,8 @@ with st.sidebar:
 
 # ===== Page setup =====
 st.set_page_config(
-    page_title="Learn3",
-    page_icon="🚀",
+    page_title="RANTAI Nexus",
+    page_icon="🌌",
     layout="wide"
 )
 
@@ -202,8 +202,8 @@ st.markdown("""
 tabs = st.tabs([
     "🤖 AI Playground", 
     "🎸 Learn to Earn",
-    "🧪 Token Lab",
-    "🗳 DAO Sandbox",
+    "👾 Retro Games",
+    "🪪 DID Prototype",
     "💱 DeFi Workshop",
     "⚒️ Smart Contract Studio",
     "⚡ Gas & Performance",
@@ -267,14 +267,14 @@ with tabs[1]:
     app = OHARA_APPS["Learn to Earn"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 2: Token Lab (iframe ke Ohara) ===
+# === Tab 2: Retro Games (iframe ke Ohara) ===
 with tabs[2]:
-    app = OHARA_APPS["Token Lab"]
+    app = OHARA_APPS["Retro Games"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 3: DAO Sandbox (iframe ke Ohara) ===
+# === Tab 3: DID Prototype (iframe ke Ohara) ===
 with tabs[3]:
-    app = OHARA_APPS["DAO Sandbox"]
+    app = OHARA_APPS["DID Prototype"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 4: DeFi Workshop (iframe ke Ohara) ===
