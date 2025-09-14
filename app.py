@@ -200,7 +200,7 @@ st.markdown("""
 
 # ===== Tab utama =====
 tabs = st.tabs([
-    "🤖 AI Playground", 
+    "🤖 Chat", 
     "🎸 Learn to Earn",
     "👾 Retro Games",
     "🪪 DID Prototype",
