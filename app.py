@@ -6,6 +6,7 @@ import os
 import pandas as pd
 import streamlit as st
 from streamlit.components.v1 import iframe
+from html import escape
 
 import streamlit as st
 import streamlit.components.v1 as components
@@ -102,21 +103,34 @@ def embed_lab(url: str, title: str = "", hide_px: int = 72):
       </script>
     """, height=1080)
     
-def embed_cropped(url: str, hide_px: int = 56, height: int = 720, hide_bottom=100, title: str | None = None):
-    """Embed iframe dengan 'crop' area atas setinggi hide_px (untuk menyamarkan header)."""
+def embed_cropped(
+    url: str,
+    hide_px: int = 56,
+    height: int = 720,
+    hide_bottom: int = 100,
+    title: str | None = None
+):
+    """
+    Embed iframe dengan crop atas (hide_px) dan crop bawah (hide_bottom).
+    """
     if title:
-        st.markdown(f"### {title}")
+        st.markdown(f"### {escape(title)}", unsafe_allow_html=True)
+
+    iframe_height = height + hide_px + hide_bottom
+    top_offset = -hide_px if hide_px else 0
+
     components.html(
         f"""
-        <div id="wrap" style="position:relative;width:100%;height:{height}px;overflow:hidden;border-radius:12px;">
+        <div style="position:relative;width:100%;height:{height}px;overflow:hidden;border-radius:12px;">
           <iframe
-            src="{url}"
-            style="position:absolute;top:-{hide_px}px;left:0;width:100%;height:{height + hide_px}px;border:0;border-radius:12px;overflow:hidden"
-            scrolling="no"
+            src="{escape(url, quote=True)}"
+            style="position:absolute;top:{top_offset}px;left:0;width:100%;height:{iframe_height}px;
+                   border:0;border-radius:12px;"
+            scrolling="yes"
           ></iframe>
         </div>
         """,
-        height=height,
+        height=height + 16,
     )
 
 if st.query_params.get("ping") == "1":
@@ -213,7 +227,7 @@ with col2:
         ## KOLABORAKSI — rumah semua eksperimen & modul Web3
     """)
 st.markdown("""
-        > 💡 Untuk tampilan dan pengalaman belajar yang optimal, disarankan menggunakan browser pada laptop atau PC untuk mengakses Learn3
+        > 💡 Untuk tampilan dan pengalaman belajar yang optimal, disarankan menggunakan browser pada laptop atau PC untuk mengakses Nexus
     """)
 
 # ===== Tab utama =====
