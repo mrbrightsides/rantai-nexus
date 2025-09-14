@@ -43,11 +43,11 @@ OHARA_APPS = {
     },
     "Cultural DAO": {
         "url": "https://ohara.ai/mini-apps/6302c6c4-4b49-4c30-9131-bb8d553fa7c5?utm_source=rantai-nexus",
-        "title": "🇮🇩 Cultural DAO"
+        "title": "⚖️ Cultural DAO"
     },
-    "Certification": {
-        "url": "https://ohara.ai/mini-apps/e86a5136-f96f-4d52-af61-8de234ed7686?utm_source=learn3",
-        "title": "🎓 Certification"
+    "Zakat Manager": {
+        "url": "https://ohara.ai/mini-apps/3e563d43-387d-4f9b-9022-094f6e060172?utm_source=rantai-nexus",
+        "title": "🕌 Zakat Manager"
     }
 }
 
@@ -240,8 +240,8 @@ tabs = st.tabs([
     "🎭 Social Media",
     "☪ Halal Chain",
     "✈ Travel Tycoon",
-    "🇮🇩 Cultural DAO",
-    "🎓 Certification"
+    "⚖️ Cultural DAO",
+    "🕌 Zakat Manager"
 ])
 
 # ===== Tab: Chatbot =====
@@ -320,7 +320,7 @@ with tabs[8]:
     app = OHARA_APPS["Cultural DAO"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 9: Certification (iframe ke Ohara) ===
+# === Tab 9: Zakat Manager (iframe ke Ohara) ===
 with tabs[9]:
-    app = OHARA_APPS["Certification"]
+    app = OHARA_APPS["Zakat Manager"]
     embed_lab(app["url"], app["title"], hide_px=100)
