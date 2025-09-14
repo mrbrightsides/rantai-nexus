@@ -172,38 +172,45 @@ with st.sidebar:
     st.sidebar.markdown("""
     RANTAI Nexus adalah rumah pusat untuk semua eksperimen RANTAI: 
     edukasi, sandbox, demo, game, simulasi, dan lain-lain.
-    Pilih modul dari navbar
-
-    Showcase dan dokumentasi ada disini [Doc](https://learn3showcase.vercel.app)
+    Pilih modul dari navbar:
+    1. Chat AI: Belajar dunia Web3 yang fun dan santai menggunakan AI
+    2. Learn to Earn: Belajar musik menggunakan AI dan Klaim Hadiah menggunakan Web3
+    3. Retro Games: 12 pilihan permainan klasik 8-bit yang bisa di hubungkan dengan pemain lainnya menggunakan Web3
+    4. DID Prototype: Cikal bakal Decentralized Identification untuk KTP masa depan
+    5. Ferix Lab: Menggambar mobil dan membandingkan karya dengan pengguna lainnya menggunakan Web3
+    6. Social Media: Berinteraksi dengan pengguna lain menggunakan Web3
+    7. Halal Chain: Menganalisa halalnya suatu restoran dalam supply chain menggunakan Web3
+    8. Travel Tycoon: Permainan simulasi menjadi pengusaha pariwisata dengan teknologi Web3
+    9. Cultural DAO: Memberikan dukungan berupa vote untuk budaya Indonesia menggunakan Web3
+    10. Zakat Manager: Bersedekah lebih aman dan nyaman memanfaatkan teknologi Web3
+    11. NFT Marketplace: Belanja souvenir berupa NFT dari tempat wisata yang ada di Indonesia 
     
     ---
     #### 🔮 Vision Statement
-    User belajar lewat chatbot AI, latihan simulasi DeFi & DAO, eksperimen smart contract, hingga riset cutting-edge seperti zkML.
-    Setiap langkah terhubung dengan ekosistem STC (GasVision, Bench, Converter, Analytics) untuk pengalaman nyata.
-    Di akhir perjalanan, user mendapatkan sertifikat Soul Bound Token (SBT) eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3.
+    RANTAI Nexus hadir sebagai ruang kolaboraksi yang menjembatani nilai iman, eksplorasi wisata, semangat akademik, dan inovasi Web3—menciptakan ekosistem belajar, bermain, dan berkreasi yang santai, inklusif, dan terhubung lewat teknologi blockchain.
 
     ---
-    ### ❓ How to Get the Badges
-    Terdapat 10 Badge di seluruh modul yang tersebar untuk didapatkan. Jelajahi modul per modul untuk mencarinya. Kumpulkan minimal 6 Badge maka kamu berhak untuk claim sertifikat 🎓
+    ### ❓ How to Log in
+    Pastikan sudah memiliki wallet. Tiap modul merupakan app standalone jadi harus login di tiap modulnya untuk merasakan pengalaman maksimal dalam menjelajahi dunia Web3.
     
     ---
-    ### 🎯 Quiz Leaderboard
-    Quiz disini hanya bersifat simulasi dan latihan. 
-    Klik [join](https://wayground.com/join?gc=53764642) agar kamu bisa simpan progress, isi nama dan avatar sendiri, serta bandingkan peringkatmu dengan peserta lainnya. 
-    Untuk mengeklaim Badge, sebaiknya masukkan nama asli disertai dengan email yang valid saaat mengisi nama peserta quiz.
+    ### 🎯 Leaderboard
+    Beberapa modul disertai leaderboard yang berbeda-beda fungsi dan tujuannya. Tingkatkan peringkat dan bersaing dengan pengguna lain untuk menjadi yang terbaik.
 
     ---
-    ### 🧩 STC Ecosystem
+    ### 🧩 RANTAI Ecosystem
     1. [STC Analytics](https://stc-analytics.streamlit.app/)
     2. [STC GasVision](https://stc-gasvision.streamlit.app/)
     3. [STC Converter](https://stc-converter.streamlit.app/)
     4. [STC Bench](https://stc-bench.streamlit.app/)
     5. [STC Insight](https://stc-insight.streamlit.app/)
     6. [STC Plugin](https://smartourism.elpeef.com/)
+    7. [SmartFaith](https://smartfaith.streamlit.app/)
+    8. [Learn3](https://learn3.streamlit.app/)
 
     ---
     #### 🙌 Dukungan & kontributor
-    - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/learn3)
+    - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/rantai-nexus)
     - Built with 💙 by [Khudri](https://s.id/khudri)
     - Dukung pengembangan proyek ini melalui: 
       [💖 GitHub Sponsors](https://github.com/sponsors/mrbrightsides) • 
@@ -224,7 +231,7 @@ st.set_page_config(
 col1, col2 = st.columns([2, 2])
 with col1:
     st.markdown("""
-        # Welcome to RANTAI Nexus 🌌
+        # Fun meets Focus, cuma di Nexus 🌌
     """)
 with col2:
     st.markdown("""
