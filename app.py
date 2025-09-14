@@ -48,6 +48,10 @@ OHARA_APPS = {
     "Zakat Manager": {
         "url": "https://ohara.ai/mini-apps/3e563d43-387d-4f9b-9022-094f6e060172?utm_source=rantai-nexus",
         "title": "🕌 Zakat Manager"
+    },
+    "NFT Marketplace": {
+        "url": "https://ohara.ai/mini-apps/09652207-5a8d-4a72-b409-cab19d4aa4f6?utm_source=rantai-nexus",
+        "title": "🪙 NFT Marketplace"
     }
 }
 
@@ -241,7 +245,8 @@ tabs = st.tabs([
     "☪ Halal Chain",
     "✈ Travel Tycoon",
     "⚖️ Cultural DAO",
-    "🕌 Zakat Manager"
+    "🕌 Zakat Manager",
+    "🪙 NFT Marketplace"
 ])
 
 # ===== Tab: Chatbot =====
@@ -323,4 +328,9 @@ with tabs[8]:
 # === Tab 9: Zakat Manager (iframe ke Ohara) ===
 with tabs[9]:
     app = OHARA_APPS["Zakat Manager"]
+    embed_lab(app["url"], app["title"], hide_px=100)
+
+# === Tab 10: NFT Marketplace (iframe ke Ohara) ===
+with tabs[10]:
+    app = OHARA_APPS["NFT Marketplace"]
     embed_lab(app["url"], app["title"], hide_px=100)
