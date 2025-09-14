@@ -29,9 +29,9 @@ OHARA_APPS = {
         "url": "https://ohara.ai/mini-apps/36b8c4fb-64ea-4f6d-8dec-3a632865b9ef?utm_source=rantai-nexus",
         "title": "🚗 Ferix Lab"
     },
-    "Smart Contract Studio": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmffs5rj50oz18nlk6ogi2lmp?utm_source=learn3",
-        "title": "⚒️ Smart Contract Studio"
+    "Social Media": {
+        "url": "https://ohara.ai/mini-apps/27ff0d99-01d2-4cff-ac22-adab36dbb5f8?utm_source=rantai-nexus",
+        "title": "🎭 Social Media"
     },
     "Gas & Performance": {
         "url": "https://ohara.ai/mini-apps/e33686f2-bdec-4043-b683-0fd4507979b2?utm_source=learn3",
@@ -237,7 +237,7 @@ tabs = st.tabs([
     "👾 Retro Games",
     "🪪 DID Prototype",
     "🚗 Ferix Lab",
-    "⚒️ Smart Contract Studio",
+    "🎭 Social Media",
     "⚡ Gas & Performance",
     "🔐 Audit Security",
     "🔗 Web3 Lab",
@@ -299,9 +299,9 @@ with tabs[4]:
     app = OHARA_APPS["Ferix Lab"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 5: Smart Contract Studio (iframe ke Ohara) ===
+# === Tab 5: Social Media (iframe ke Ohara) ===
 with tabs[5]:
-    app = OHARA_APPS["Smart Contract Studio"]
+    app = OHARA_APPS["Social Media"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 6: Gas & Performance (iframe ke Ohara) ===
