@@ -260,12 +260,12 @@ tabs = st.tabs([
 with tabs[0]:
     st.subheader("🤖 Chat AI")
     st.markdown("""
-        Tanya AI dan Admin tentang website ini.
+        Tanya AI seputar Web3 dengan vibes yang friendly.
     """)
         
     # --- Persist pilihan widget
     if "chat_widget" not in st.session_state:
-        st.session_state.chat_widget = "Chat"  # default
+        st.session_state.chat_widget = "Gateway"  # default
     
     widget_opt = st.radio(
         " ",
