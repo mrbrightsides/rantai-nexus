@@ -212,6 +212,24 @@ tabs = st.tabs([
     "🎓 Certification"
 ])
 
+def iframe(src, height=720, width="100%", hide_top=0, hide_bottom=0, title=None):
+    """
+    Render iframe dengan opsi crop atas/bawah.
+    """
+    container_height = height - hide_bottom
+    st.markdown(f"""
+        <div style="height:{container_height}px; 
+                    overflow:hidden; 
+                    position:relative;">
+            <iframe src="{src}" 
+                    width="{width}" 
+                    height="{height}px" 
+                    frameborder="0"
+                    style="position:relative; top:-{hide_top}px;">
+            </iframe>
+        </div>
+    """, unsafe_allow_html=True)
+
 # ===== Tab: Chatbot =====
 with tabs[0]:
     st.subheader("🤖 Chat")
@@ -242,7 +260,7 @@ with tabs[0]:
     st.write(f"💬 Chat aktif: **{widget_opt}**")
     st.caption("Jika area kosong, kemungkinan dibatasi oleh CSP/X-Frame-Options dari penyedia.")
     
-    iframe(src=final_url, height=720)
+    iframe(src=final_url, height=720, hide_bottom=100)
     
     if st.button(f"🔗 Klik disini jika ingin menampilkan halaman chat {widget_opt} dengan lebih baik"):
         st.markdown(f"""<meta http-equiv="refresh" content="0; url={chosen_url}">""", unsafe_allow_html=True)
