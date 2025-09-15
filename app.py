@@ -172,7 +172,7 @@ with st.sidebar:
     st.sidebar.markdown("""
     RANTAI Nexus adalah ruang bermain sekaligus ruang belajar, di mana fun bertemu focus, iman bertemu inovasi, wisata bertemu Web3, dan akademik bertemu eksperimen; semua terhubung lewat rantai ide dan kode, serta kolaborasi dan aksi.
    
-    Pilih modul dari navbar:
+    Pilih modul DApp dari navbar:
     1. Chat AI: Belajar dunia Web3 secara fun dan santai dengan AI multitalent.
     2. Learn to Earn: Eksperimen musik bareng AI, lalu klaim hadiah lewat Web3.
     3. Retro Games: Mainkan 12 game klasik 8-bit dan koneksikan skor dengan pemain lain via Web3.
@@ -235,7 +235,7 @@ with col1:
     """)
 with col2:
     st.markdown("""
-        ## KOLABORAKSI — rumah semua eksperimen & modul Web3
+        ## KOLABORAKSI — rumah semua eksperimen & modul DApp Web3
     """)
 st.markdown("""
         > 💡 Untuk tampilan dan pengalaman belajar yang optimal, disarankan menggunakan browser pada laptop atau PC untuk mengakses Nexus
@@ -243,16 +243,16 @@ st.markdown("""
 
 # ===== Tab utama =====
 tabs = st.tabs([
-    "🤖 Chat AI", 
+    "🤖 Chat AI",
+    "🚗 Ferix Lab",
     "🎸 Learn to Earn",
     "👾 Retro Games",
-    "🪪 DID Prototype",
-    "🚗 Ferix Lab",
+    "✈ Travel Tycoon",
     "🎭 Social Media",
     "☪ Halal Chain",
-    "✈ Travel Tycoon",
-    "⚖️ Cultural DAO",
     "🕌 Zakat Manager",
+    "⚖️ Cultural DAO",
+    "🪪 DID Prototype",
     "🪙 NFT Marketplace"
 ])
 
