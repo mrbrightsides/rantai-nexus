@@ -58,6 +58,29 @@ OHARA_APPS = {
 import streamlit as st
 import streamlit.components.v1 as components
 
+# Quick CSS theme (dark + teal accents)
+st.markdown("""
+<style>
+:root { --accent:#20c997; --accent2:#7c4dff; }
+.block-container { padding-top: 1rem; }
+section[data-testid="stSidebar"] .st-expander { border:1px solid #313131; border-radius:12px; }
+div[data-testid="stMetric"]{
+  background: linear-gradient(135deg, rgba(32,201,151,.08), rgba(124,77,255,.06));
+  border: 1px solid rgba(128,128,128,.15);
+  padding: 12px; border-radius: 12px;
+}
+.stButton>button, .stDownloadButton>button{
+  border-radius:10px; border:1px solid rgba(255,255,255,.15);
+}
+.stTabs [data-baseweb="tab-list"] { gap: 6px; }
+.stTabs [data-baseweb="tab"]{
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px; padding: 6px 12px;
+}
+[data-testid="stHeader"] { background: transparent; }
+</style>
+""", unsafe_allow_html=True)
+
 def iframe(src, height=720, width="100%", hide_top=0, hide_bottom=0, title=None):
     """
     Render iframe dengan opsi crop atas/bawah.
