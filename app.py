@@ -231,7 +231,7 @@ st.set_page_config(
 col1, col2 = st.columns([2, 2])
 with col1:
     st.markdown("""
-        # Fun meets Focus on Nexus 🌌
+        # Fun meets Focus with Nexus 🌌
     """)
 with col2:
     st.markdown("""
@@ -292,23 +292,23 @@ with tabs[0]:
     if st.button(f"🔗 Klik disini jika ingin menampilkan halaman chat {widget_opt} dengan lebih baik"):
         st.markdown(f"""<meta http-equiv="refresh" content="0; url={chosen_url}">""", unsafe_allow_html=True)
 
-# === Tab 1: Learn to Earn (iframe ke Ohara) ===
-with tabs[1]:
+# === Tab 2: Learn to Earn (iframe ke Ohara) ===
+with tabs[2]:
     app = OHARA_APPS["Learn to Earn"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 2: Retro Games (iframe ke Ohara) ===
-with tabs[2]:
+# === Tab 3: Retro Games (iframe ke Ohara) ===
+with tabs[3]:
     app = OHARA_APPS["Retro Games"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 3: DID Prototype (iframe ke Ohara) ===
-with tabs[3]:
+# === Tab 9: DID Prototype (iframe ke Ohara) ===
+with tabs[9]:
     app = OHARA_APPS["DID Prototype"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 4: Ferix Lab (iframe ke Ohara) ===
-with tabs[4]:
+# === Tab 1: Ferix Lab (iframe ke Ohara) ===
+with tabs[1]:
     app = OHARA_APPS["Ferix Lab"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
@@ -322,8 +322,8 @@ with tabs[6]:
     app = OHARA_APPS["Halal Chain"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 7: Travel Tycoon (iframe ke Ohara) ===
-with tabs[7]:
+# === Tab 4: Travel Tycoon (iframe ke Ohara) ===
+with tabs[4]:
     app = OHARA_APPS["Travel Tycoon"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
@@ -332,8 +332,8 @@ with tabs[8]:
     app = OHARA_APPS["Cultural DAO"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 9: Zakat Manager (iframe ke Ohara) ===
-with tabs[9]:
+# === Tab 7: Zakat Manager (iframe ke Ohara) ===
+with tabs[7]:
     app = OHARA_APPS["Zakat Manager"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
