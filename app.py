@@ -197,7 +197,7 @@ with st.sidebar:
     ### 🎯 Leaderboard
     Beberapa modul disertai leaderboard yang berbeda-beda fungsi dan tujuannya. Tingkatkan peringkat dan bersaing dengan pengguna lain untuk menjadi yang terbaik.
 
-    ---
+     ---
     ### 🧩 RANTAI Ecosystem
     1. [STC Analytics](https://stc-analytics.streamlit.app/)
     2. [STC GasVision](https://stc-gasvision.streamlit.app/)
@@ -207,6 +207,7 @@ with st.sidebar:
     6. [STC Plugin](https://smartourism.elpeef.com/)
     7. [SmartFaith](https://smartfaith.streamlit.app/)
     8. [Learn3](https://learn3.streamlit.app/)
+    9. [DataHub](https://stc-data.streamlit.app/)
 
     ---
     #### 🙌 Dukungan & kontributor
