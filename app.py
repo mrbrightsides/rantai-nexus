@@ -38,7 +38,7 @@ OHARA_APPS = {
         "title": "☪ Halal Chain"
     },
     "Travel Tycoon": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmfm8g0lh05cq0anxgp0166nj?utm_source=rantai-nexus",
+        "url": "https://ohara.ai/mini-apps/miniapp_cmfmwpqfq0bhm0anx6kly7pnz",
         "title": "✈ Travel Tycoon"
     },
     "Cultural DAO": {
