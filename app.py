@@ -209,6 +209,7 @@ with st.sidebar:
     8. [Learn3](https://learn3.streamlit.app/)
     9. [DataHub](https://stc-data.streamlit.app/)
     10. [BlockPedia](https://blockpedia.streamlit.app/)
+    11. [STC GasX](https://stc-gasx.streamlit.app/)
 
     ---
     #### 🙌 Dukungan & kontributor
