@@ -34,7 +34,7 @@ OHARA_APPS = {
         "title": "🎭 Social Media"
     },
     "Halal Chain": {
-        "url": "https://ohara.ai/mini-apps/f3731395-8e3c-45e2-b222-c838ea3834d9?utm_source=rantai-nexus",
+        "url": "https://ohara.ai/mini-apps/miniapp_cmfnpzgdy03h69pnxdy4z1y3z?utm_source=rantai-nexus",
         "title": "☪ Halal Chain"
     },
     "Travel Tycoon": {
