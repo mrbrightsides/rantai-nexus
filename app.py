@@ -30,7 +30,7 @@ OHARA_APPS = {
         "title": "🚗 Ferix Lab"
     },
     "Social Media": {
-        "url": "https://ohara.ai/mini-apps/27ff0d99-01d2-4cff-ac22-adab36dbb5f8?utm_source=rantai-nexus",
+        "url": "https://ohara.ai/mini-apps/miniapp_cmfnpr1es03fu9pnxgm8t3y2n?utm_source=rantai-nexus",
         "title": "🎭 Social Media"
     },
     "Halal Chain": {
