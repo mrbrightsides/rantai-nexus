@@ -360,4 +360,4 @@ with tabs[7]:
 # === Tab 10: NFT Marketplace (iframe ke Ohara) ===
 with tabs[10]:
     app = OHARA_APPS["NFT Marketplace"]
-    embed_lab(app["url"], app["title"])
+    embed_lab(app["url"], app["title"], hide_top_px=110, hide_bottom_px = 50)
