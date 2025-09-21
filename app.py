@@ -59,43 +59,52 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 def iframe(src, height=720, width="100%", hide_top=0, hide_bottom=0, title=None):
-    """
-    Render iframe dengan opsi crop atas/bawah.
-    """
-    container_height = height - hide_bottom
+    if title:
+        st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
+
+    # Hitung tinggi iframe yang sebenarnya
+    iframe_height = height + hide_top + hide_bottom
+    # Hitung posisi top iframe
+    top_offset = -hide_top
+
     st.markdown(f"""
-        <div style="height:{container_height}px; 
+        <div style="height:{height}px; 
                     overflow:hidden; 
                     position:relative;">
             <iframe src="{src}" 
                     width="{width}" 
-                    height="{height}px" 
+                    height="{iframe_height}px" 
                     frameborder="0"
-                    style="position:relative; top:-{hide_top}px;">
+                    style="position:relative; top:{top_offset}px;">
             </iframe>
         </div>
     """, unsafe_allow_html=True)
+    
+def embed_lab(url: str, title: str = "", hide_top: int = 72, hide_bottom: int = 0, height: int = 720):
+    if title:
+        st.markdown(f"### {title}", unsafe_allow_html=True)
 
-def embed_lab(url: str, title: str = "", hide_px: int = 72):
-    st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
-
+    # Tinggi iframe yang sebenarnya
+    iframe_height = height + hide_top + hide_bottom
+    # Offset untuk menyembunyikan bagian atas
+    top_offset = -hide_top
+    
+    # Menggunakan components.html dengan logika yang sudah diperbaiki
     components.html(f"""
-      <div id="wrap" style="position:relative;width:100%;height:100vh;overflow:hidden;border-radius:12px;">
+      <div style="position:relative;width:100%;height:{height}px;overflow:hidden;border-radius:12px;">
         <div id="loader"
              style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
                     font-weight:600;opacity:.6;transition:opacity .3s ease">
           Loading module…
         </div>
 
-        <!-- iframe full viewport -->
         <iframe id="ohara" src="{url}"
-          style="position:absolute; top:-{hide_px}px; left:0;
-                 width:100%; height:calc(100vh + {hide_px}px);
+          style="position:absolute; top:{top_offset}px; left:0;
+                 width:100%; height:{iframe_height}px;
                  border:0; border-radius:12px; overflow:hidden"></iframe>
       </div>
 
       <script>
-        // Loader fade-out saat iframe ready
         const ifr = document.getElementById('ohara');
         ifr.addEventListener('load', () => {{
           const l = document.getElementById('loader');
@@ -105,7 +114,7 @@ def embed_lab(url: str, title: str = "", hide_px: int = 72):
           }}
         }});
       </script>
-    """, height=1080)
+    """, height=height) # Tinggi kontainer Streamlit
     
 def embed_cropped(
     url: str,
@@ -135,6 +144,34 @@ def embed_cropped(
         </div>
         """,
         height=height + 16,
+    )def embed_cropped(
+    url: str,
+    hide_px: int = 56,
+    height: int = 720,
+    hide_bottom: int = 100,
+    title: str | None = None
+):
+    """
+    Embed iframe dengan crop atas (hide_px) dan crop bawah (hide_bottom).
+    """
+    if title:
+        st.markdown(f"### {title}", unsafe_allow_html=True)
+
+    iframe_height = height + hide_px + hide_bottom
+    top_offset = -hide_px
+
+    components.html(
+        f"""
+        <div style="position:relative;width:100%;height:{height}px;overflow:hidden;border-radius:12px;">
+          <iframe
+            src="{url}"
+            style="position:absolute;top:{top_offset}px;left:0;width:100%;height:{iframe_height}px;
+                   border:0;border-radius:12px;"
+            scrolling="yes"
+          ></iframe>
+        </div>
+        """,
+        height=height, # Sesuaikan tinggi components.html dengan tinggi kontainer
     )
 
 if st.query_params.get("ping") == "1":
