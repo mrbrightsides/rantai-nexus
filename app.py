@@ -344,7 +344,6 @@ with tabs[5]:
 # === Tab 6: Halal Chain (iframe ke Ohara) ===
 with tabs[6]:
     app = OHARA_APPS["Halal Chain"]
-    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 4: Travel Tycoon (iframe ke Ohara) ===
 with tabs[4]:
