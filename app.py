@@ -334,7 +334,7 @@ with tabs[3]:
 # === Tab 9: DID Prototype (iframe ke Ohara) ===
 with tabs[9]:
     app = OHARA_APPS["DID Prototype"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 50)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 30)
 
 # === Tab 1: Ferix Lab (iframe ke Ohara) ===
 with tabs[1]:
@@ -344,7 +344,7 @@ with tabs[1]:
 # === Tab 5: Social Media (iframe ke Ohara) ===
 with tabs[5]:
     app = OHARA_APPS["Social Media"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 50)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 30)
     
 # === Tab 6: Halal Chain (iframe ke Ohara) ===
 with tabs[6]:
