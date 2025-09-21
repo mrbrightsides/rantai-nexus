@@ -344,7 +344,7 @@ with tabs[1]:
 # === Tab 5: Social Media (iframe ke Ohara) ===
 with tabs[5]:
     app = OHARA_APPS["Social Media"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 30)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 15)
     
 # === Tab 6: Halal Chain (iframe ke Ohara) ===
 with tabs[6]:
