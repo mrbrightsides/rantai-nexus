@@ -324,28 +324,23 @@ with tabs[0]:
 # === Tab 2: Learn to Earn (iframe ke Ohara) ===
 with tabs[2]:
     app = OHARA_APPS["Learn to Earn"]
-    embed_lab(app["url"], app["title"], hide_px=100)
-
+    
 # === Tab 3: Retro Games (iframe ke Ohara) ===
 with tabs[3]:
     app = OHARA_APPS["Retro Games"]
-    embed_lab(app["url"], app["title"], hide_px=100)
-
+    
 # === Tab 9: DID Prototype (iframe ke Ohara) ===
 with tabs[9]:
     app = OHARA_APPS["DID Prototype"]
-    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 1: Ferix Lab (iframe ke Ohara) ===
 with tabs[1]:
     app = OHARA_APPS["Ferix Lab"]
-    embed_lab(app["url"], app["title"], hide_px=100)
-
+   
 # === Tab 5: Social Media (iframe ke Ohara) ===
 with tabs[5]:
     app = OHARA_APPS["Social Media"]
-    embed_lab(app["url"], app["title"], hide_px=100)
-
+    
 # === Tab 6: Halal Chain (iframe ke Ohara) ===
 with tabs[6]:
     app = OHARA_APPS["Halal Chain"]
@@ -354,19 +349,16 @@ with tabs[6]:
 # === Tab 4: Travel Tycoon (iframe ke Ohara) ===
 with tabs[4]:
     app = OHARA_APPS["Travel Tycoon"]
-    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 8: Cultural DAO (iframe ke Ohara) ===
 with tabs[8]:
     app = OHARA_APPS["Cultural DAO"]
-    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 7: Zakat Manager (iframe ke Ohara) ===
 with tabs[7]:
     app = OHARA_APPS["Zakat Manager"]
-    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 10: NFT Marketplace (iframe ke Ohara) ===
 with tabs[10]:
     app = OHARA_APPS["NFT Marketplace"]
-    embed_lab(app["url"], app["title"], hide_px=100)
+    
