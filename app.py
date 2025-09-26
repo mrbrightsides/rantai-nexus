@@ -58,52 +58,73 @@ OHARA_APPS = {
 import streamlit as st
 import streamlit.components.v1 as components
 
+def iframe_with_mobile_notice(content_html, height):
+    style = """
+    <style>
+      @media (max-width: 768px) {
+          .hide-on-mobile { display:none!important; }
+          .show-on-mobile {
+              display:block!important;
+              padding:24px 12px;
+              background:#ffecec;
+              color:#d10000;
+              font-weight:bold;
+              text-align:center;
+              border-radius:12px;
+              font-size:1.2em;
+              margin-top:24px;
+          }
+      }
+      @media (min-width: 769px) {
+          .show-on-mobile { display:none!important; }
+      }
+    </style>
+    """
+    notice = '''
+      <div class="show-on-mobile">
+        📱 Tampilan ini tidak tersedia di perangkat seluler.<br>
+        Silakan buka lewat laptop atau desktop untuk pengalaman penuh 💻
+      </div>
+    '''
+    components.html(
+        style +
+        f'<div class="hide-on-mobile">{content_html}</div>' +
+        notice,
+        height=height
+    )
+
 def iframe(src, height=720, width="100%", hide_top=0, hide_bottom=0, title=None):
     if title:
         st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
-
-    # Hitung tinggi iframe yang sebenarnya
     iframe_height = height + hide_top + hide_bottom
-    # Hitung posisi top iframe
     top_offset = -hide_top
-
-    st.markdown(f"""
-        <div style="height:{height}px; 
-                    overflow:hidden; 
-                    position:relative;">
-            <iframe src="{src}" 
-                    width="{width}" 
-                    height="{iframe_height}px" 
+    content_html = f'''
+        <div style="height:{height}px; overflow:hidden; position:relative;">
+            <iframe src="{src}" width="{width}" height="{iframe_height}px"
                     frameborder="0"
                     style="position:relative; top:{top_offset}px;">
             </iframe>
         </div>
-    """, unsafe_allow_html=True)
-    
-def embed_lab(url: str, title: str = "", hide_top: int = 72, hide_bottom: int = 0, height: int = 720):
+    '''
+    iframe_with_mobile_notice(content_html, height)
+
+def embed_lab(url, title="", hide_top=72, hide_bottom=0, height=720):
     if title:
         st.markdown(f"### {title}", unsafe_allow_html=True)
-
-    # Tinggi iframe yang sebenarnya
     iframe_height = height + hide_top + hide_bottom
-    # Offset untuk menyembunyikan bagian atas
     top_offset = -hide_top
-    
-    # Menggunakan components.html dengan logika yang sudah diperbaiki
-    components.html(f"""
+    content_html = f'''
       <div style="position:relative;width:100%;height:{height}px;overflow:hidden;border-radius:12px;">
         <div id="loader"
-             style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+            style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
                     font-weight:600;opacity:.6;transition:opacity .3s ease">
           Loading module…
         </div>
-
         <iframe id="ohara" src="{url}"
           style="position:absolute; top:{top_offset}px; left:0;
                  width:100%; height:{iframe_height}px;
                  border:0; border-radius:12px; overflow:hidden"></iframe>
       </div>
-
       <script>
         const ifr = document.getElementById('ohara');
         ifr.addEventListener('load', () => {{
@@ -114,38 +135,9 @@ def embed_lab(url: str, title: str = "", hide_top: int = 72, hide_bottom: int = 
           }}
         }});
       </script>
-    """, height=height) # Tinggi kontainer Streamlit
+    '''
+    iframe_with_mobile_notice(content_html, height)
     
-def embed_cropped(
-    url: str,
-    hide_px: int = 56,
-    height: int = 720,
-    hide_bottom: int = 100,
-    title: str | None = None
-):
-    """
-    Embed iframe dengan crop atas (hide_px) dan crop bawah (hide_bottom).
-    """
-    if title:
-        st.markdown(f"### {escape(title)}", unsafe_allow_html=True)
-
-    iframe_height = height + hide_px + hide_bottom
-    top_offset = -hide_px if hide_px else 0
-
-    components.html(
-        f"""
-        <div style="position:relative;width:100%;height:{height}px;overflow:hidden;border-radius:12px;">
-          <iframe
-            src="{escape(url, quote=True)}"
-            style="position:absolute;top:{top_offset}px;left:0;width:100%;height:{iframe_height}px;
-                   border:0;border-radius:12px;"
-            scrolling="yes"
-          ></iframe>
-        </div>
-        """,
-        height=height + 16,
-    )
-
 if st.query_params.get("ping") == "1":
     st.write("ok"); st.stop()
 
@@ -342,49 +334,49 @@ with tabs[0]:
 # === Tab 2: Learn to Earn (iframe ke Ohara) ===
 with tabs[2]:
     app = OHARA_APPS["Learn to Earn"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
 # === Tab 3: Retro Games (iframe ke Ohara) ===
 with tabs[3]:
     app = OHARA_APPS["Retro Games"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
 # === Tab 9: DID Prototype (iframe ke Ohara) ===
 with tabs[9]:
     app = OHARA_APPS["DID Prototype"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 1: Ferix Lab (iframe ke Ohara) ===
 with tabs[1]:
     app = OHARA_APPS["Ferix Lab"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
    
 # === Tab 5: Social Media (iframe ke Ohara) ===
 with tabs[5]:
     app = OHARA_APPS["Social Media"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
 # === Tab 6: Halal Chain (iframe ke Ohara) ===
 with tabs[6]:
     app = OHARA_APPS["Halal Chain"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 4: Travel Tycoon (iframe ke Ohara) ===
 with tabs[4]:
     app = OHARA_APPS["Travel Tycoon"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 8: Cultural DAO (iframe ke Ohara) ===
 with tabs[8]:
     app = OHARA_APPS["Cultural DAO"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 7: Zakat Manager (iframe ke Ohara) ===
 with tabs[7]:
     app = OHARA_APPS["Zakat Manager"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 10: NFT Marketplace (iframe ke Ohara) ===
 with tabs[10]:
     app = OHARA_APPS["NFT Marketplace"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 80)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
