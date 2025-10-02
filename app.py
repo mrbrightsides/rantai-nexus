@@ -290,7 +290,7 @@ with tabs[0]:
 # === Tab 2: Learn to Earn (iframe ke ELPEEF) ===
 with tabs[2]:
     app = ELPEEF_APPS["Learn to Earn"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
     
 # === Tab 3: Retro Games (iframe ke ELPEEF) ===
 with tabs[3]:
