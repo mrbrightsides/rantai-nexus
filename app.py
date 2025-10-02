@@ -290,7 +290,7 @@ with tabs[0]:
 # === Tab 2: Learn to Earn (iframe ke ELPEEF) ===
 with tabs[2]:
     app = ELPEEF_APPS["Learn to Earn"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -15)
     
 # === Tab 3: Retro Games (iframe ke ELPEEF) ===
 with tabs[3]:
@@ -320,7 +320,7 @@ with tabs[6]:
 # === Tab 4: Travel Tycoon (iframe ke ELPEEF) ===
 with tabs[4]:
     app = ELPEEF_APPS["Travel Tycoon"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -15)
 
 # === Tab 8: Cultural DAO (iframe ke ELPEEF) ===
 with tabs[8]:
