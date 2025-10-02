@@ -11,46 +11,46 @@ from html import escape
 import streamlit as st
 import streamlit.components.v1 as components
 
-# ==== Ohara Miniapps ====
-OHARA_APPS = {
+# ==== ELPEEF Miniapps ====
+ELPEEF_APPS = {
     "Learn to Earn": {
-        "url": "https://ohara.ai/mini-apps/13b468ca-644e-4736-b06f-2141861901ec?utm_source=rantai-nexus",
+        "url": "https://learntoearn.elpeef.com/?utm_source=rantai-nexus",
         "title": "🎸 Learn to Earn"
     },
     "Retro Games": {
-        "url": "https://ohara.ai/mini-apps/b3f29b78-f623-4d9e-b0be-e81c7a8d5dd0?utm_source=rantai-nexus",
+        "url": "https://ELPEEF.ai/mini-apps/b3f29b78-f623-4d9e-b0be-e81c7a8d5dd0?utm_source=rantai-nexus",
         "title": "👾 Retro Games"
     },
     "DID Prototype": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmfix4aur0g98nulkbdou3zlg?utm_source=rantai-nexus",
+        "url": "https://ELPEEF.ai/mini-apps/miniapp_cmfix4aur0g98nulkbdou3zlg?utm_source=rantai-nexus",
         "title": "🪪 DID Prototype"
     },
     "Ferix Lab": {
-        "url": "https://ohara.ai/mini-apps/36b8c4fb-64ea-4f6d-8dec-3a632865b9ef?utm_source=rantai-nexus",
+        "url": "https://ELPEEF.ai/mini-apps/36b8c4fb-64ea-4f6d-8dec-3a632865b9ef?utm_source=rantai-nexus",
         "title": "🚗 Ferix Lab"
     },
     "Social Media": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmfnpr1es03fu9pnxgm8t3y2n?utm_source=rantai-nexus",
+        "url": "https://ELPEEF.ai/mini-apps/miniapp_cmfnpr1es03fu9pnxgm8t3y2n?utm_source=rantai-nexus",
         "title": "🎭 Social Media"
     },
     "Halal Chain": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmfnpzgdy03h69pnxdy4z1y3z?utm_source=rantai-nexus",
+        "url": "https://ELPEEF.ai/mini-apps/miniapp_cmfnpzgdy03h69pnxdy4z1y3z?utm_source=rantai-nexus",
         "title": "☪ Halal Chain"
     },
     "Travel Tycoon": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmfmwpqfq0bhm0anx6kly7pnz",
+        "url": "https://ELPEEF.ai/mini-apps/miniapp_cmfmwpqfq0bhm0anx6kly7pnz",
         "title": "✈ Travel Tycoon"
     },
     "Cultural DAO": {
-        "url": "https://ohara.ai/mini-apps/6302c6c4-4b49-4c30-9131-bb8d553fa7c5?utm_source=rantai-nexus",
+        "url": "https://ELPEEF.ai/mini-apps/6302c6c4-4b49-4c30-9131-bb8d553fa7c5?utm_source=rantai-nexus",
         "title": "⚖️ Cultural DAO"
     },
     "Zakat Manager": {
-        "url": "https://ohara.ai/mini-apps/3e563d43-387d-4f9b-9022-094f6e060172?utm_source=rantai-nexus",
+        "url": "https://ELPEEF.ai/mini-apps/3e563d43-387d-4f9b-9022-094f6e060172?utm_source=rantai-nexus",
         "title": "🕌 Zakat Manager"
     },
     "NFT Marketplace": {
-        "url": "https://ohara.ai/mini-apps/09652207-5a8d-4a72-b409-cab19d4aa4f6?utm_source=rantai-nexus",
+        "url": "https://ELPEEF.ai/mini-apps/09652207-5a8d-4a72-b409-cab19d4aa4f6?utm_source=rantai-nexus",
         "title": "🪙 NFT Marketplace"
     }
 }
@@ -120,13 +120,13 @@ def embed_lab(url, title="", hide_top=72, hide_bottom=0, height=720):
                     font-weight:600;opacity:.6;transition:opacity .3s ease">
           Loading module…
         </div>
-        <iframe id="ohara" src="{url}"
+        <iframe id="ELPEEF" src="{url}"
           style="position:absolute; top:{top_offset}px; left:0;
                  width:100%; height:{iframe_height}px;
                  border:0; border-radius:12px; overflow:hidden"></iframe>
       </div>
       <script>
-        const ifr = document.getElementById('ohara');
+        const ifr = document.getElementById('ELPEEF');
         ifr.addEventListener('load', () => {{
           const l = document.getElementById('loader');
           if (l) {{
@@ -201,7 +201,7 @@ with st.sidebar:
     ---
     ### 🧩 Apps Showcase
     Lihat disini untuk semua tools yang kami kembangkan:
-    [ELPEEF](https://showcase.elpeef.com/)
+    [ELPEEF](https://showcase.ELPEEF.com/)
 
     ---
     #### 🙌 Dukungan & kontributor
@@ -287,52 +287,52 @@ with tabs[0]:
     if st.button(f"🔗 Klik disini jika ingin menampilkan halaman chat {widget_opt} dengan lebih baik"):
         st.markdown(f"""<meta http-equiv="refresh" content="0; url={chosen_url}">""", unsafe_allow_html=True)
 
-# === Tab 2: Learn to Earn (iframe ke Ohara) ===
+# === Tab 2: Learn to Earn (iframe ke ELPEEF) ===
 with tabs[2]:
-    app = OHARA_APPS["Learn to Earn"]
+    app = ELPEEF_APPS["Learn to Earn"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
-# === Tab 3: Retro Games (iframe ke Ohara) ===
+# === Tab 3: Retro Games (iframe ke ELPEEF) ===
 with tabs[3]:
-    app = OHARA_APPS["Retro Games"]
+    app = ELPEEF_APPS["Retro Games"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
-# === Tab 9: DID Prototype (iframe ke Ohara) ===
+# === Tab 9: DID Prototype (iframe ke ELPEEF) ===
 with tabs[9]:
-    app = OHARA_APPS["DID Prototype"]
+    app = ELPEEF_APPS["DID Prototype"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
-# === Tab 1: Ferix Lab (iframe ke Ohara) ===
+# === Tab 1: Ferix Lab (iframe ke ELPEEF) ===
 with tabs[1]:
-    app = OHARA_APPS["Ferix Lab"]
+    app = ELPEEF_APPS["Ferix Lab"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
    
-# === Tab 5: Social Media (iframe ke Ohara) ===
+# === Tab 5: Social Media (iframe ke ELPEEF) ===
 with tabs[5]:
-    app = OHARA_APPS["Social Media"]
+    app = ELPEEF_APPS["Social Media"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
-# === Tab 6: Halal Chain (iframe ke Ohara) ===
+# === Tab 6: Halal Chain (iframe ke ELPEEF) ===
 with tabs[6]:
-    app = OHARA_APPS["Halal Chain"]
+    app = ELPEEF_APPS["Halal Chain"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
-# === Tab 4: Travel Tycoon (iframe ke Ohara) ===
+# === Tab 4: Travel Tycoon (iframe ke ELPEEF) ===
 with tabs[4]:
-    app = OHARA_APPS["Travel Tycoon"]
+    app = ELPEEF_APPS["Travel Tycoon"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
-# === Tab 8: Cultural DAO (iframe ke Ohara) ===
+# === Tab 8: Cultural DAO (iframe ke ELPEEF) ===
 with tabs[8]:
-    app = OHARA_APPS["Cultural DAO"]
+    app = ELPEEF_APPS["Cultural DAO"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
-# === Tab 7: Zakat Manager (iframe ke Ohara) ===
+# === Tab 7: Zakat Manager (iframe ke ELPEEF) ===
 with tabs[7]:
-    app = OHARA_APPS["Zakat Manager"]
+    app = ELPEEF_APPS["Zakat Manager"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
-# === Tab 10: NFT Marketplace (iframe ke Ohara) ===
+# === Tab 10: NFT Marketplace (iframe ke ELPEEF) ===
 with tabs[10]:
-    app = OHARA_APPS["NFT Marketplace"]
+    app = ELPEEF_APPS["NFT Marketplace"]
     embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
