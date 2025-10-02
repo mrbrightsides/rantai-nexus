@@ -18,39 +18,39 @@ ELPEEF_APPS = {
         "title": "🎸 Learn to Earn"
     },
     "Retro Games": {
-        "url": "https://ELPEEF.ai/mini-apps/b3f29b78-f623-4d9e-b0be-e81c7a8d5dd0?utm_source=rantai-nexus",
+        "url": "https://retrogames.elpeef.com?utm_source=rantai-nexus",
         "title": "👾 Retro Games"
     },
     "DID Prototype": {
-        "url": "https://ELPEEF.ai/mini-apps/miniapp_cmfix4aur0g98nulkbdou3zlg?utm_source=rantai-nexus",
+        "url": "https://did.elpeef.com?utm_source=rantai-nexus",
         "title": "🪪 DID Prototype"
     },
     "Ferix Lab": {
-        "url": "https://ELPEEF.ai/mini-apps/36b8c4fb-64ea-4f6d-8dec-3a632865b9ef?utm_source=rantai-nexus",
+        "url": "https://ferixlab.elpeef.com?utm_source=rantai-nexus",
         "title": "🚗 Ferix Lab"
     },
     "Social Media": {
-        "url": "https://ELPEEF.ai/mini-apps/miniapp_cmfnpr1es03fu9pnxgm8t3y2n?utm_source=rantai-nexus",
+        "url": "https://socialchain.elpeef.com?utm_source=rantai-nexus",
         "title": "🎭 Social Media"
     },
     "Halal Chain": {
-        "url": "https://ELPEEF.ai/mini-apps/miniapp_cmfnpzgdy03h69pnxdy4z1y3z?utm_source=rantai-nexus",
+        "url": "https://halalchain.elpeef.com?utm_source=rantai-nexus",
         "title": "☪ Halal Chain"
     },
     "Travel Tycoon": {
-        "url": "https://ELPEEF.ai/mini-apps/miniapp_cmfmwpqfq0bhm0anx6kly7pnz",
+        "url": "https://traveltycoon.elpeef.com?utm_source=rantai-nexus",
         "title": "✈ Travel Tycoon"
     },
     "Cultural DAO": {
-        "url": "https://ELPEEF.ai/mini-apps/6302c6c4-4b49-4c30-9131-bb8d553fa7c5?utm_source=rantai-nexus",
+        "url": "https://culturaldao.elpeef.com?utm_source=rantai-nexus",
         "title": "⚖️ Cultural DAO"
     },
     "Zakat Manager": {
-        "url": "https://ELPEEF.ai/mini-apps/3e563d43-387d-4f9b-9022-094f6e060172?utm_source=rantai-nexus",
+        "url": "https://waqf.elpeef.com?utm_source=rantai-nexus",
         "title": "🕌 Zakat Manager"
     },
     "NFT Marketplace": {
-        "url": "https://ELPEEF.ai/mini-apps/09652207-5a8d-4a72-b409-cab19d4aa4f6?utm_source=rantai-nexus",
+        "url": "https://nftmarketplace.elpeef.com?utm_source=rantai-nexus",
         "title": "🪙 NFT Marketplace"
     }
 }
@@ -295,44 +295,44 @@ with tabs[2]:
 # === Tab 3: Retro Games (iframe ke ELPEEF) ===
 with tabs[3]:
     app = ELPEEF_APPS["Retro Games"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
     
 # === Tab 9: DID Prototype (iframe ke ELPEEF) ===
 with tabs[9]:
     app = ELPEEF_APPS["DID Prototype"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
 
 # === Tab 1: Ferix Lab (iframe ke ELPEEF) ===
 with tabs[1]:
     app = ELPEEF_APPS["Ferix Lab"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
    
 # === Tab 5: Social Media (iframe ke ELPEEF) ===
 with tabs[5]:
     app = ELPEEF_APPS["Social Media"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
     
 # === Tab 6: Halal Chain (iframe ke ELPEEF) ===
 with tabs[6]:
     app = ELPEEF_APPS["Halal Chain"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
 
 # === Tab 4: Travel Tycoon (iframe ke ELPEEF) ===
 with tabs[4]:
     app = ELPEEF_APPS["Travel Tycoon"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
 
 # === Tab 8: Cultural DAO (iframe ke ELPEEF) ===
 with tabs[8]:
     app = ELPEEF_APPS["Cultural DAO"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
-
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    
 # === Tab 7: Zakat Manager (iframe ke ELPEEF) ===
 with tabs[7]:
     app = ELPEEF_APPS["Zakat Manager"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
 
 # === Tab 10: NFT Marketplace (iframe ke ELPEEF) ===
 with tabs[10]:
     app = ELPEEF_APPS["NFT Marketplace"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
