@@ -290,49 +290,49 @@ with tabs[0]:
 # === Tab 2: Learn to Earn (iframe ke ELPEEF) ===
 with tabs[2]:
     app = ELPEEF_APPS["Learn to Earn"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
     
 # === Tab 3: Retro Games (iframe ke ELPEEF) ===
 with tabs[3]:
     app = ELPEEF_APPS["Retro Games"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
     
 # === Tab 9: DID Prototype (iframe ke ELPEEF) ===
 with tabs[9]:
     app = ELPEEF_APPS["DID Prototype"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
 
 # === Tab 1: Ferix Lab (iframe ke ELPEEF) ===
 with tabs[1]:
     app = ELPEEF_APPS["Ferix Lab"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
    
 # === Tab 5: Social Media (iframe ke ELPEEF) ===
 with tabs[5]:
     app = ELPEEF_APPS["Social Media"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
     
 # === Tab 6: Halal Chain (iframe ke ELPEEF) ===
 with tabs[6]:
     app = ELPEEF_APPS["Halal Chain"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
 
 # === Tab 4: Travel Tycoon (iframe ke ELPEEF) ===
 with tabs[4]:
     app = ELPEEF_APPS["Travel Tycoon"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -100)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
 
 # === Tab 8: Cultural DAO (iframe ke ELPEEF) ===
 with tabs[8]:
     app = ELPEEF_APPS["Cultural DAO"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
     
 # === Tab 7: Zakat Manager (iframe ke ELPEEF) ===
 with tabs[7]:
     app = ELPEEF_APPS["Zakat Manager"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -100)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
 
 # === Tab 10: NFT Marketplace (iframe ke ELPEEF) ===
 with tabs[10]:
     app = ELPEEF_APPS["NFT Marketplace"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
