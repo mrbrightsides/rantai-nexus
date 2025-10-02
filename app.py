@@ -320,7 +320,7 @@ with tabs[6]:
 # === Tab 4: Travel Tycoon (iframe ke ELPEEF) ===
 with tabs[4]:
     app = ELPEEF_APPS["Travel Tycoon"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -100)
 
 # === Tab 8: Cultural DAO (iframe ke ELPEEF) ===
 with tabs[8]:
@@ -330,7 +330,7 @@ with tabs[8]:
 # === Tab 7: Zakat Manager (iframe ke ELPEEF) ===
 with tabs[7]:
     app = ELPEEF_APPS["Zakat Manager"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -105)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -100)
 
 # === Tab 10: NFT Marketplace (iframe ke ELPEEF) ===
 with tabs[10]:
