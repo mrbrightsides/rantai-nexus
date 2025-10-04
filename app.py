@@ -335,4 +335,4 @@ with tabs[7]:
 # === Tab 10: NFT Marketplace (iframe ke ELPEEF) ===
 with tabs[10]:
     app = ELPEEF_APPS["NFT Marketplace"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -45)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
