@@ -295,7 +295,7 @@ with tabs[2]:
 # === Tab 3: Retro Games (iframe ke ELPEEF) ===
 with tabs[3]:
     app = ELPEEF_APPS["Retro Games"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = 30)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = 0)
     
 # === Tab 9: DID Prototype (iframe ke ELPEEF) ===
 with tabs[9]:
@@ -310,7 +310,7 @@ with tabs[1]:
 # === Tab 5: Social Media (iframe ke ELPEEF) ===
 with tabs[5]:
     app = ELPEEF_APPS["Social Media"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = 30)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = 0)
     
 # === Tab 6: Halal Chain (iframe ke ELPEEF) ===
 with tabs[6]:
